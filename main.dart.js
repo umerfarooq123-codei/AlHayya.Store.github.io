@@ -101247,7 +101247,7 @@ s($,"bbi","aJL",()=>new A.adD("214618261902-qrg2niqt3dk6ea8ejnjhbe44226obrdi.app
 r($,"bc8","aNJ",()=>{var q="Recommended",p=null,o="Price, Low to High",n="Price, High to Low",m=t.N
 return A.a([A.MM(A.N(q,p,B.ed,p,p,A.R(p,p,p,p,0),p,p),q,m),A.MM(A.N(o,p,B.ed,p,p,A.R(p,p,p,p,0),p,p),o,m),A.MM(A.N(n,p,B.ed,p,p,A.R(p,p,p,p,0),p,p),n,m),A.MM(A.N("Newest",p,B.ed,p,p,A.R(p,p,p,p,0),p,p),"Newest",m),A.MM(A.N("Oldest",p,B.ed,p,p,A.R(p,p,p,p,0),p,p),"Oldest",m)],A.aj("F<o1<j>>"))})
 s($,"baa","aVJ",()=>{var q=null,p=t.z
-return A.a([A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/",!0,new A.a3w(),q,q,q,!0,!0,q,q,q,q,p),A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/home_page",!0,new A.a3x(),q,q,q,!0,!0,q,q,q,q,p),A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/AddProducts",!0,new A.a3y(),q,q,q,!0,!0,q,q,q,q,p),A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/ProductDetails/:param1",!0,new A.a3z(),q,q,q,!0,!0,q,q,q,q,p),A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/ShoppingCart",!0,new A.a3A(),q,q,q,!0,!0,q,q,q,q,p),A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/Product",!0,new A.a3B(),q,q,q,!0,!0,q,q,q,q,p)],t.RT)})
+return A.a([A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/Pages",!0,new A.a3w(),q,q,q,!0,!0,q,q,q,q,p),A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/home_page",!0,new A.a3x(),q,q,q,!0,!0,q,q,q,q,p),A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/AddProducts",!0,new A.a3y(),q,q,q,!0,!0,q,q,q,q,p),A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/ProductDetails/:param1",!0,new A.a3z(),q,q,q,!0,!0,q,q,q,q,p),A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/ShoppingCart",!0,new A.a3A(),q,q,q,!0,!0,q,q,q,q,p),A.od(q,q,q,B.cU,B.cV,B.G,q,!1,q,!0,q,"/Product",!0,new A.a3B(),q,q,q,!0,!0,q,q,q,q,p)],t.RT)})
 s($,"bdH","aXr",()=>new A.J())
 s($,"beu","aO0",()=>A.hF())
 s($,"bb4","Kk",()=>new A.J())
