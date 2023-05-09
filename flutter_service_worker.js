@@ -45,10 +45,10 @@ const RESOURCES = {
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons8-iphone-spinner-100.png": "3950897585152e8a9647f93e26124b07",
-"index.html": "1ce22d3d53be76204894a91302430673",
-"/": "1ce22d3d53be76204894a91302430673",
+"index.html": "87bbf8c63e2dc021314fa30196cfec3e",
+"/": "87bbf8c63e2dc021314fa30196cfec3e",
 "loading.png": "0a14c665b9707d9755843702ef465c11",
-"main.dart.js": "37832ecdb09cec57c9c42b50ef40d857",
+"main.dart.js": "defbe7cd79448eceda4572433165bca8",
 "manifest.json": "38efb4c8cb9c2814f1b776dba833bcb4",
 "version.json": "86b84dc7f63221cbafcc129562e46748"
 };
