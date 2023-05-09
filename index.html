@@ -14,7 +14,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-    <base href="https://umerfarooq123-codei.github.io/AlHayya.Store.github.io/" />
+    <base href="/https://umerfarooq123-codei.github.io/AlHayya.Store.github.io/" />
     <meta
       name="google-signin-client_id"
       content="214618261902-qrg2niqt3dk6ea8ejnjhbe44226obrdi.apps.googleusercontent.com"
@@ -38,23 +38,106 @@
 
     <script>
       // The value below is injected by flutter build, do not touch.
-      var serviceWorkerVersion = "957601703";
+      var serviceWorkerVersion = "3509516200";
     </script>
     <!-- This script adds the flutter initialization JS code -->
     <script src="flutter.js" defer></script>
   </head>
   <body>
+    <style>
+      body {
+        background-color: #fff;
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+      }
+      .main-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.2s ease-out;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+
+      .loader {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+        animation: animate 1.2s linear infinite;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .loader span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 60%;
+        background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+      }
+
+      .loader span:nth-child(1) {
+        filter: blur(5px);
+      }
+
+      .loader span:nth-child(2) {
+        filter: blur(10px);
+      }
+
+      .loader span:nth-child(3) {
+        filter: blur(25px);
+      }
+
+      .loader span:nth-child(4) {
+        filter: blur(50px);
+      }
+
+      .loader:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        background: #191919;
+        border-radius: 50%;
+      }
+    </style>
     <script>
+      function delay(time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+      }
       window.addEventListener("load", function (ev) {
+        var loaderContent = document.querySelector("#loader-content");
         // Download main.dart.js
         _flutter.loader.loadEntrypoint({
           serviceWorker: {
             serviceWorkerVersion: serviceWorkerVersion,
           },
           onEntrypointLoaded: function (engineInitializer) {
-            engineInitializer.initializeEngine().then(function (appRunner) {
-              appRunner.runApp();
-            });
+            engineInitializer
+              .initializeEngine()
+              .then(async function (appRunner) {
+                loaderContent.style.opacity = "0";
+                await delay(200);
+                appRunner.runApp();
+              });
           },
         });
       });
@@ -79,5 +162,14 @@
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
     </script>
+    <div class="main-content" id="loader-content">
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <img src="icons8-iphone-spinner-100.png" alt="My App Logo" />
+    </div>
   </body>
 </html>
