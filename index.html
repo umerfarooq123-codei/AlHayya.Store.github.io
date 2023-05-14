@@ -14,7 +14,9 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-    <base href="https://umerfarooq123-codei.github.io/AlHayya.Store.github.io/" />
+    <base
+      href="https://umerfarooq123-codei.github.io/AlHayya.Store.github.io/"
+    />
     <meta
       name="google-signin-client_id"
       content="214618261902-qrg2niqt3dk6ea8ejnjhbe44226obrdi.apps.googleusercontent.com"
@@ -31,17 +33,17 @@
     <link rel="apple-touch-icon" href="icons/Icon-192.png" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="icons8-iphone-spinner-100.png" />
 
-    <title>al_hayy</title>
+    <title>Al-Hayya-Store</title>
     <link rel="manifest" href="manifest.json" />
 
     <script>
       // The value below is injected by flutter build, do not touch.
-      var serviceWorkerVersion = "3570643033";
+      var serviceWorkerVersion = "646187956";
     </script>
     <!-- This script adds the flutter initialization JS code -->
-    <script src="flutter.js" defer></script>
+    <script src="flutter.js" defer=""></script>
   </head>
   <body>
     <style>
@@ -57,7 +59,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: opacity 0.2s ease-out;
+        transition: opacity 0.4s ease-out;
       }
       img {
         width: 100px;
@@ -134,9 +136,9 @@
             engineInitializer
               .initializeEngine()
               .then(async function (appRunner) {
+                await delay(400);
                 loaderContent.style.opacity = "0";
-                await delay(200);
-                appRunner.runApp();
+                await appRunner.runApp();
               });
           },
         });
